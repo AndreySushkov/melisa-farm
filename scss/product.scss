@@ -1,0 +1,83 @@
+.product {
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 20px;
+    }
+    &__title {
+        grid-column: 1/-1;
+    }
+    &__img {
+        margin: 0 auto;
+        filter: drop-shadow(-2px -2px 5px rgba(0, 0, 0, 0.3));
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+    &__price {
+        font-size: 55px;
+        font-weight: 700;
+        &::after {
+            content: '₽';
+        }
+        &--full {
+            font-size: 45px;
+            color: #6d6d6d;
+            text-decoration:line-through;
+        }
+    }
+    &__count-title {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    &__count {
+        font-size: 20px;
+    }
+    &__count-btn {
+        &--minus,
+        &--plus {
+            border: none;
+            background-color: inherit;
+            cursor: pointer;
+            
+        }
+    }
+    &__btn {
+        padding: 15px 25px;
+        background-color: #3a7948;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 500;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    &__btn.cart-btn--active {
+        background-color: #beeaa3;
+        color: #3a7948;
+    }
+    &__sum,
+    &__sum-title {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    &__sum::after {
+        content: '₽';
+    }
+    &__info {
+        grid-column: 1/-1;
+    }
+    &__info-title {
+        margin-bottom: 10px;
+    }
+    &__info-article {
+        margin-bottom: 30px;
+        color: #909090;
+    }
+    &__info-text p {
+        margin-bottom: 20px;
+    }
+}

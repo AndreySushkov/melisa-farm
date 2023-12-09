@@ -1,0 +1,77 @@
+@charset "UTF-8";
+.cart {
+  font-size: 20px;
+}
+.cart__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.cart__list {
+  grid-column: span 3;
+  width: 100%;
+  text-align: center;
+}
+.cart__column {
+  width: 25%;
+  padding: 20px 0;
+}
+.cart__item-img {
+  margin: 0 auto;
+  filter: drop-shadow(-2px -2px 5px rgba(0, 0, 0, 0.3));
+}
+.cart__item-title {
+  width: 40%;
+}
+.cart__item-price::after {
+  content: "₽";
+}
+.cart__item-count-text::after {
+  content: " шт.";
+}
+.cart__item-count-btn--minus, .cart__item-count-btn--plus {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+.cart__sum {
+  font-size: 30px;
+}
+.cart__sum-value {
+  font-size: 60px;
+  font-weight: 700;
+}
+.cart__sum-value::after {
+  content: "₽";
+}
+
+.order {
+  font-size: 20px;
+}
+.order__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.order__adress-title, .order__phone-title, .order__email-title {
+  font-weight: 700;
+}
+.order__adress-input, .order__phone-input, .order__email-input {
+  margin-left: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+.order__pay-input {
+  cursor: pointer;
+}
+.order__btn {
+  padding: 20px 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #3a7948;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}

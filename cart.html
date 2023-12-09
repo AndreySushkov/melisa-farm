@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Корзина</title>
+  <link rel="stylesheet" href="css/swiper-bundle.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a class="logo" href="index.html">
+            <img src="images/logo-melise.png" alt="">
+          </a>
+          <ul class="nav__list">
+            <li class="nav__item heading">
+              <a class="nav__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="nav__item heading">
+              <a class="nav__link" href="promo.html">Акции</a>
+            </li>
+            <li class="nav__item heading">
+              <a class="nav__link" href="contacts.html">Контакты</a>
+            </li>
+            <li class="nav__item heading">
+              <a class="nav__link" href="cart.html">
+                <img src="images/cart.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="section cart">
+        <div class="container">
+          <div class="breadcrumps">
+            <span>
+              <a href="index.html">Главная</a>
+            </span>
+            /
+            <span>
+              <a href="#">Корзина</a>
+            </span>
+          </div>
+          <h1 class="cart__title heading">Корзина</h1>
+          <div class="cart__inner">
+            <table class="cart__list">
+              <thead class="cart__headings">
+                <th class="cart__headings-item"></th>
+                <th class="cart__headings-item">Название</th>
+                <th class="cart__headings-item">Цена</th>
+                <th class="cart__headings-item">Количество</th>
+              </thead>
+              <tr class="cart__item">
+                <td class="cart__column">
+                  <a href="product-1.html">
+                    <img class="cart__item-img" src="images/good-1.png" alt="">
+                  </a>
+                </td>
+                <td class="cart__column">
+                  <a class="cart__item-title" href="product-1.html">CALIFORNIA GOLD NUTRITION</a>
+                </td>
+                <td class="price cart__column cart__item-price">2322</td>
+                <td class="cart__column cart__item-count">
+                  <button class="count-btn--minus cart__item-count-btn--minus">—</button>
+                  <span class="count-text cart__item-count-text">1</span>
+                  <button class="count-btn--plus cart__item-count-btn--plus" >+</button>
+                </td>
+              </tr>
+              <tr class="cart__item">
+                <td class="cart__column">
+                  <a href="product-2.html">
+                    <img class="cart__item-img" src="images/good-2.png" alt="">
+                  </a>
+                </td>
+                <td class="cart__column">
+                  <a class="cart__item-title" href="product-2.html">АВИАМАРИН</a>
+                </td>
+                <td class="price cart__column cart__item-price">289</td>
+                <td class="cart__column cart__item-count">
+                  <button class="count-btn--minus cart__item-count-btn--minus">—</button>
+                  <span class="count-text cart__item-count-text">2</span>
+                  <button class="count-btn--plus cart__item-count-btn--plus" >+</button>
+                </td>
+              </tr>
+            </table>
+            <div class="cart__right">
+              <h3 class="cart__sum">Итого:</h3>
+              <p class="price-sum cart__sum-value">2900</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section order">
+        <div class="container">
+          <form class="card order__form" name="cart-form" action="">
+            <div class="order__adress">
+              <label class="order__adress-title" for="order-adress">Адрес доставки </label>
+              <input class="order__adress-input" name="adress" id="order-adress" type="text" name="order-adress" placeholder="Ваш адрес">
+            </div>
+            <div class="order__phone">
+              <label class="order__phone-title" for="order-phone">Телефон </label>
+              <input class="order__phone-input" name="phone" id="order-phone" type="tel" name="order-phone" placeholder="Ваш телефон">
+            </div>
+            <div class="order__email">
+              <label class="order__email-title" for="order-email">Email </label>
+              <input class="order__email-input" name="email" id="order-email" type="email" name="order-email" placeholder="Ваш email">
+            </div>
+            <div class="order__pay">
+              <h2 class="order__pay-title">Способ оплаты</h2>
+              <div class="order__pay-item">
+                <input class="order__pay-input" name="order-pay" id="hand-payment" value="hand-payment" type="radio">
+                <label class="order__pay-title" for="hand-payment">Оплата при получении</label>
+              </div>
+              <div class="order__pay-item">
+                <input class="order__pay-input" name="order-pay" id="prepayment" value="prepayment" type="radio">
+                <label class="order__pay-title" for="prepayment">Предоплата на сайте</label>
+              </div>
+            </div>
+            <button class="order__btn" name="buy-btn" type="submit">Оформить</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__list">
+          <div class="footer__column">
+            <h3 class="footer__column-title">ООО "Мелисса-Фарм"</h3>
+            <a class="telephone" href="tel:79568745">+7(956)87-45</a>
+            <a class="email" href="mailto:melisfarm@gmail.com">melisfarm@gmail.com</a>
+            <p class="adress">г. Воронеж, пр-т Революции, д. 19</p>
+            <div class="social">
+              <a class="social__item" href="#">
+                <img src="images/telegram.svg" alt="">
+              </a>
+              <a class="social__item" href="#">
+                <img src="images/vk.svg" alt="">
+              </a>
+              <a class="social__item" href="#">
+                <img src="images/whatsapp.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__column-title">Меню</h3>
+            <a class="footer__column-item" href="catalog.html">Каталог</a>
+            <a class="footer__column-item" href="promo.html">Акции</a>
+            <a class="footer__column-item" href="contacts.html">Контакты</a>
+          </div>
+          <form class="footer__form" name="subscribe-form" action="">
+            <h3 class="footer__column-title">Подписаться на новинки</h3>
+            <input class="footer__form-input" name="email" type="email" placeholder="Ваш email">
+            <button class="footer__form-btn" name="subscribe-btn" type="submit">Подписаться</button>
+          </form>
+        </div>
+        <div class="copyright">
+          <a class="copyright__link" href="#">Privacy Policy & Terms Conditions</a>
+          <p class="copyright__text">All credits own by respective owner</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

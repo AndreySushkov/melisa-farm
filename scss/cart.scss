@@ -1,0 +1,83 @@
+.cart {
+    font-size: 20px;
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &__list {
+        grid-column: span 3;
+        width: 100%;
+        text-align: center;
+    }
+    &__column {
+        width: 25%;
+        padding: 20px 0;
+    }
+    &__item-img {
+        margin: 0 auto;
+        filter: drop-shadow(-2px -2px 5px rgba(0, 0, 0, 0.3));
+    }
+    &__item-title {
+        width: 40%;
+    }
+    &__item-price::after {
+        content: '₽';
+    }
+    &__item-count-text::after {
+        content: ' шт.';
+    }
+    &__item-count-btn {
+        &--minus,
+        &--plus {
+            border: none;
+            background-color: inherit;
+            cursor: pointer;  
+        }
+    }
+    &__sum {
+        font-size: 30px;
+    }
+    &__sum-value {
+        font-size: 60px;
+        font-weight: 700;
+        &::after {
+            content: '₽';
+        }
+    }
+}
+
+.order {
+    font-size: 20px;
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    &__adress-title,
+    &__phone-title,
+    &__email-title {
+        font-weight: 700;
+    }
+    &__adress-input,
+    &__phone-input,
+    &__email-input {
+        margin-left: 20px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+    }
+    &__pay-input {
+        cursor: pointer;
+    }
+    &__btn {
+        padding: 20px 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #3a7948;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
